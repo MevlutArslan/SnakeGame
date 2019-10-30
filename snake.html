@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Mevlut Cafer Arslan</title>
+        <link rel="stylesheet" type="text/css" href="SnakeApp.css"/>
+        <link rel="stylesheet" type="text/css" href="../../stylesheets/Main.css"/>   
+    </head>
+    <body>
+        <header>
+            <div id="header">
+            <a id="backToMain" href="../../index.html">
+                <h3 id="MainHead">Mevlut Cafer Arslan</h3>
+                </a>
+            </div>
+        </header>
+        <nav>
+            <div id="navbar">
+                <a href="../../index.html">
+                    <img alt="site_logo" src="../../media/photos/logo_transparent_c.png"/>
+                </a>
+                <div id="nav">
+                    <ul>
+                        <li><a href="../../pages/about.html">About</a></li>
+                        <li><a href="../../pages/blog.html">Blog</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div id="container">
+
+        
+        <canvas id="snake" width="600" height="600" style="
+            border: 1px solid black;"></canvas>
+        <div id="scorelistC">
+                <ul id="scoreList">
+                    
+                </ul>
+        </div>
+        
+        <div id="buttonGroup">
+            <button id="replay">REPLAY</button>
+
+            <button id="saveScore" style="visibility: hidden">Save Score</button>
+
+            <input type="text" placeholder="Mevlut" id="userName" style="visibility: hidden"/>
+            <input type="submit" id="submitS" style="visibility: hidden"/>
+        </div>
+        </div>
+
+        
+        <script src="https://www.gstatic.com/firebasejs/5.9.4/firebase.js"></script>
+        <script>
+                // Initialize Firebase
+                var config = {
+                  apiKey: "AIzaSyApG-G35coFmUp9m7e_GxGe3fU8b7KIFwE",
+                  authDomain: "snakegame-a4894.firebaseapp.com",
+                  databaseURL: "https://snakegame-a4894.firebaseio.com",
+                  projectId: "snakegame-a4894",
+                  storageBucket: "snakegame-a4894.appspot.com",
+                  messagingSenderId: "1062075085191"
+                };
+                firebase.initializeApp(config);
+
+                const database = firebase.firestore();
+              </script>
+              <script src="GenerateTable.js"></script>
+        <script src='./Snake.js'></script>
+    </body>
+</html>

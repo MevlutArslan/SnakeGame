@@ -1,0 +1,50 @@
+canvas{
+    margin-top: 50px;
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 100px;
+    margin-right: 100px;
+    display: block;
+    float:left;
+}
+
+
+#buttonGroup{
+    height:100px;
+    width: auto;
+}
+
+#scoreList{
+    margin-top:50px;
+    border: 1px;
+    margin-left:auto;
+    list-style-type: none;
+}
+
+#scorelistC{
+    height: 600px;
+    width:400px;
+    margin-left: 50%;
+    margin-right: auto;
+    background-color: #ff3b3f;
+}
+
+span{
+    display:inline-block;
+    margin-right: 15px;
+    margin-top: 20px;
+    font-size: 25px;
+    font-display: bold;
+}
+
+
+#container{
+    background-color: #efefef;
+    align-items: center;
+}
+
+button{
+    margin: 30px;
+}
+
+
